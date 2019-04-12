@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int m,d,y;
+	cout << "This is a program that will accept integer value for (mm/dd/yyyy) and then output the 'long version'.\n";
+	cout << "\nEnter Month (mm): ";
+	cin >> m;
+	cout << "\nEnter Day (dd): ";
+	cin >> d;
+	cout << "\nEnter Year (yyyy): ";
+	cin >> y;
+	
+	if (m==1 && d>0 && d<=31 && y>=0 && y<10000)
+	cout<<"\nJanuary "<<d<<", "<<y;
+	else if (m==2 && d>0 && d<29 && y>=0 && y<10000)
+	cout<<"\nFebruary "<<d<<", "<<y;
+	else if (m==2 && d>0 && d<=29 && y>=0 && y<10000 && y%4==0)
+	cout<<"\nFebruary "<<d<<", "<<y;
+	else if (m==3 && d>0 && d<=31 && y>=0 && y<10000)
+	cout<<"\nMarch "<<d<<", "<<y;
+	else if (m==4 && d>0 && d<=30 && y>0 && y<10000)
+	cout<<"\nApril "<<d<<", "<<y;
+	else if (m==5 && d>0 && d<=31 && y>0 && y<10000)
+	cout<<"\nMay "<<d<<", "<<y;
+	else if (m==6 && d>0 && d<=30 && y>0 && y<10000)
+	cout<<"\nJune "<<d<<", "<<y;
+	else if (m==7 && d>0 && d<=31 && y>0 && y<10000)
+	cout<<"\nJuly "<<d<<", "<<y;
+	else if (m==8 && d>0 && d<=31 && y>=0 && y<10000)
+	cout<<"\nAugust "<<d<<", "<<y;
+	else if (m==9 && d>0 && d<=30 && y>=0 && y<10000)
+	cout<<"\nSeptember "<<d<<", "<<y;
+	else if (m==10 && d>0 && d<=31 && y>=0 && y<10000)
+	cout<<"\nOctober "<<d<<", "<<y;
+	else if (m==11 && d>0 && d<=30 && y>=0 && y<10000)
+	cout<<"\nNovember "<<d<<", "<<y;
+	else if (m==12 && d>0 && d<=31 && y>0 && y<10000)
+	cout<<"\nDecember "<<d<<", "<<y;
+	else
+	cout<<"\nInvalid Input";
+		
+	return 0;
+} 
